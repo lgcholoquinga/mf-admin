@@ -16,7 +16,14 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+					"options": {
+						"assets": [
+							{
+								"glob": "**/*",
+								"input": "public"
+							}
+						]
+					},
 					"configurations": {
 						"production": {
 							"target": "mf-admin:esbuild:production"
