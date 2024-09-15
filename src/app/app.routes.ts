@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
 	{
-		path: 'auth',
+		path: 'mf-auth',
 		loadChildren: () => loadRemoteModule('mf-admin-auth', './routes').then((r) => r.routes),
 	},
 	{
@@ -12,7 +12,7 @@ export const routes: Routes = [
 	},
 	{
 		path: '',
-		redirectTo: 'auth',
+		redirectTo: 'mf-auth',
 		pathMatch: 'full',
 	},
 	{
